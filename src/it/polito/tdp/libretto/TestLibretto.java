@@ -44,6 +44,13 @@ public class TestLibretto {
 		
 		System.out.println(libr.toString());
 		
+		System.out.println("\nMiglioramento del libretto:");
+		Libretto m=libr.librettoMigliorato();
+		System.out.println(libr.toString());
+		System.out.println(m.toString());
+		
+		m.cancellaVotiScarsi();
+		System.out.println("\n"+m.toString());
 	}
 
 }
